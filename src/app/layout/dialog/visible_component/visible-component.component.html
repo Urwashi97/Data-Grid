@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>
+  {{ pageTitle }}
+</h1>
+
+<mat-divider></mat-divider>
+<mat-dialog-content>
+  <div class="signin-content">
+    <mat-card>
+      <mat-card-content *ngFor="let cell of t.controls; let i = index">
+        <mat-form-field class="grid-input" [formGroup]="cell">
+          <input
+            matInput
+            [placeholder]="getPlaceHolder(i)"
+            [readonly]="getReadOnly(i)"
+            class="form-control"
+            formControlName="name"
+          />
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button mat-raised-button (click)="closeComponentDialog()">Cancel</button>
+  <button mat-button (click)="saveDialogData()" cdkFocusInitial>Save</button>
+</mat-dialog-actions>

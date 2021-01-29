@@ -1,0 +1,95 @@
+table {
+  width: 100%;
+}
+tr.mat-header-row.cdk-header-row {
+  background: rgb(175, 114, 175);
+}
+th.mat-header-cell.cdk-header-cell {
+  color: #fff;
+  font-weight: 700;
+  font-size: revert;
+}
+h1 {
+  text-align: center;
+  margin: 16px;
+  padding: 10px;
+  background: #d4d4d4;
+}
+td.mat-cell.cdk-cell {
+  padding: 16px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+tr.mat-row.cdk-row {
+  text-align: right;
+}
+tr.mat-row.cdk-row:hover {
+  background-color: #fadcdc;
+}
+th.mat-header-cell.cdk-header-cell {
+  text-align: center;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-qtr1.mat-column-qtr1 {
+  background: rgb(52, 141, 241);
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-qtr2.mat-column-qtr2 {
+  background: rgb(52, 141, 241);
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-qtr3.mat-column-qtr3 {
+  background: rgb(52, 141, 241);
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-qtr4.mat-column-qtr4 {
+  background: rgb(52, 141, 241);
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-annual.mat-column-annual {
+  background: rgb(79 99 205);
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-type.mat-column-type {
+  background: rgb(52, 141, 241);
+}
+td.mat-cell.cdk-cell.cdk-column-type.mat-column-type {
+  text-align: left;
+  background: rgb(52, 141, 241);
+  font-weight: 500;
+  color: aliceblue;
+}
+td.mat-cell.cdk-cell.cdk-column-qtr1.mat-column-qtr1 {
+  background: rgb(52, 141, 241);
+  font-weight: 500;
+  color: aliceblue;
+}
+td.mat-cell.cdk-cell.cdk-column-qtr2.mat-column-qtr2 {
+  background: rgb(52, 141, 241);
+  font-weight: 500;
+  color: aliceblue;
+}
+td.mat-cell.cdk-cell.cdk-column-qtr3.mat-column-qtr3 {
+  background: rgb(52, 141, 241);
+  font-weight: 500;
+  color: aliceblue;
+}
+td.mat-cell.cdk-cell.cdk-column-qtr4.mat-column-qtr4 {
+  background: rgb(52, 141, 241);
+  font-weight: 500;
+  color: aliceblue;
+}
+td.mat-cell.cdk-cell.cdk-column-annual.mat-column-annual {
+  background: rgb(79 99 205);
+  font-weight: 500;
+  color: aliceblue;
+}
+:host ::ng-deep .mat-table tbody tr.mat-row.cdk-row:nth-child(3) {
+  background-color: #dddddd;
+}
+:host ::ng-deep .mat-table tbody tr.mat-row.cdk-row:nth-child(4) {
+  background-color: #dddddd;
+}
+:host ::ng-deep .mat-table tbody tr.mat-row.cdk-row:nth-child(5) {
+  background-color: #dddddd;
+}
+:host ::ng-deep .mat-table tbody tr.mat-row.cdk-row:nth-child(6) {
+  background-color: #dddddd;
+}
+:host ::ng-deep .mat-table tbody tr.mat-row.cdk-row:nth-child(7) {
+  background-color: #dddddd;
+}

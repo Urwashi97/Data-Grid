@@ -1,0 +1,23 @@
+button {
+  padding: 6px;
+  background: rgb(175, 114, 175);
+  margin: auto;
+  color: white;
+}
+.cell {
+  margin: 4px 0 4px 0;
+  background: rgb(175, 114, 175);
+}
+.mat-dialog-title {
+  margin: 4px;
+  padding: 14px;
+  display: block;
+  background: #d4d4d4;
+  text-align: center;
+}
+button {
+  border-style: none;
+}
+:focus {
+  outline: none;
+}

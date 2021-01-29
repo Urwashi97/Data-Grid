@@ -1,0 +1,193 @@
+<h1>{{ title }}</h1>
+<table
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8"
+  (onCellClick)="getDetail($event)"
+>
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Head Column -->
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef>Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.Type }}</td>
+  </ng-container>
+
+  <!-- Jan Column -->
+  <ng-container matColumnDef="jan">
+    <th mat-header-cell *matHeaderCellDef>Jan</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Jan }}
+    </td>
+  </ng-container>
+
+  <!-- Feb Column -->
+  <ng-container matColumnDef="feb">
+    <th mat-header-cell *matHeaderCellDef>Feb</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Feb }}
+    </td>
+  </ng-container>
+
+  <!-- Mar Column -->
+  <ng-container matColumnDef="mar">
+    <th mat-header-cell *matHeaderCellDef>Mar</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Mar }}
+    </td>
+  </ng-container>
+
+  <!-- Qtr1 Column -->
+  <ng-container matColumnDef="qtr1">
+    <th mat-header-cell *matHeaderCellDef>Qtr1</th>
+    <td mat-cell *matCellDef="let element">{{ element.Qtr1 }}</td>
+  </ng-container>
+
+  <!-- Apr Column -->
+  <ng-container matColumnDef="apr">
+    <th mat-header-cell *matHeaderCellDef>Apr</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Apr }}
+    </td>
+  </ng-container>
+
+  <!-- May Column -->
+  <ng-container matColumnDef="may">
+    <th mat-header-cell *matHeaderCellDef>May</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.May }}
+    </td>
+  </ng-container>
+
+  <!-- Jun Column -->
+  <ng-container matColumnDef="jun">
+    <th mat-header-cell *matHeaderCellDef>Jun</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Jun }}
+    </td>
+  </ng-container>
+
+  <!-- Qtr2 Column -->
+  <ng-container matColumnDef="qtr2">
+    <th mat-header-cell *matHeaderCellDef>Qtr2</th>
+    <td mat-cell *matCellDef="let element">{{ element.Qtr2 }}</td>
+  </ng-container>
+
+  <!-- Jul Column -->
+  <ng-container matColumnDef="jul">
+    <th mat-header-cell *matHeaderCellDef>Jul</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Jul }}
+    </td>
+  </ng-container>
+
+  <!-- Aug Column -->
+  <ng-container matColumnDef="aug">
+    <th mat-header-cell *matHeaderCellDef>Aug</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Aug }}
+    </td>
+  </ng-container>
+
+  <!-- Sep Column -->
+  <ng-container matColumnDef="sep">
+    <th mat-header-cell *matHeaderCellDef>Sep</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Sep }}
+    </td>
+  </ng-container>
+
+  <!-- Qtr3 Column -->
+  <ng-container matColumnDef="qtr3">
+    <th mat-header-cell *matHeaderCellDef>Qtr3</th>
+    <td mat-cell *matCellDef="let element">{{ element.Qtr3 }}</td>
+  </ng-container>
+
+  <!-- Oct Column -->
+  <ng-container matColumnDef="oct">
+    <th mat-header-cell *matHeaderCellDef>Oct</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Oct }}
+    </td>
+  </ng-container>
+
+  <!-- Nov Column -->
+  <ng-container matColumnDef="nov">
+    <th mat-header-cell *matHeaderCellDef>Nov</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Nov }}
+    </td>
+  </ng-container>
+
+  <!-- Dec Column -->
+  <ng-container matColumnDef="dec">
+    <th mat-header-cell *matHeaderCellDef>Dec</th>
+    <td
+      mat-cell
+      (click)="openDialog($event, element)"
+      *matCellDef="let element"
+    >
+      {{ element.Dec }}
+    </td>
+  </ng-container>
+
+  <!-- Qtr4 Column -->
+  <ng-container matColumnDef="qtr4">
+    <th mat-header-cell *matHeaderCellDef>Qtr4</th>
+    <td mat-cell *matCellDef="let element">{{ element.Qtr4 }}</td>
+  </ng-container>
+
+  <!-- Annual Column -->
+  <ng-container matColumnDef="annual">
+    <th mat-header-cell *matHeaderCellDef>Annual</th>
+    <td mat-cell *matCellDef="let element">{{ element.Annual }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
